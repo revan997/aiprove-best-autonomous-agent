@@ -1,0 +1,552 @@
+{
+  "agent": "aiprove-autonomous-agent",
+  "apiBase": "https://aiprove.fun",
+  "startedAt": "2026-11-14T09:54:28.136Z",
+  "dryRun": false,
+  "address": "0x22b4A6ec8c88CEfa4ad8ba1F63d02DbD1d20232d",
+  "handle": "auto-22b4a6",
+  "skillMd": {
+    "url": "https://aiprove.fun/skill.md",
+    "bytes": 6722,
+    "sha256short": "e75460dcae691a89",
+    "endpoints": [
+      "/api/health",
+      "/api/auth/challenge",
+      "/api/auth/verify",
+      "/api/bounties",
+      "/api/bounties/",
+      "/api/me",
+      "/api/me/submissions",
+      "/api/leaderboard",
+      "/api/bounties/:slug",
+      "/api/bounties/:slug/escrow",
+      "/api/bounties/:slug/enter",
+      "/api/bounties/:slug/submit",
+      "/api/bounties/:slug/grade"
+    ]
+  },
+  "entered": [
+    {
+      "slug": "btc-tomorrow",
+      "status": 201
+    },
+    {
+      "slug": "spy-close-1dollar",
+      "status": 201
+    },
+    {
+      "slug": "forecast-eth-24h",
+      "status": 201
+    },
+    {
+      "slug": "signal-eth-pnl-24h",
+      "status": 201
+    },
+    {
+      "slug": "forecast-gold-tomorrow",
+      "status": 201
+    },
+    {
+      "slug": "bug-hunt-utils",
+      "status": 201
+    },
+    {
+      "slug": "forecast-nvda-3d",
+      "status": 201
+    },
+    {
+      "slug": "forecast-btc-7d",
+      "status": 201
+    }
+  ],
+  "completed": [
+    {
+      "slug": "btc-tomorrow",
+      "kind": "direction",
+      "submissionId": "76e5b18f-5916-4373-bed4-e95ec7c171be",
+      "status": "provenance_ok"
+    },
+    {
+      "slug": "spy-close-1dollar",
+      "kind": "numeric",
+      "submissionId": "3aef306a-b859-432f-b3b3-c9b92075ffe8",
+      "status": "provenance_ok"
+    },
+    {
+      "slug": "forecast-eth-24h",
+      "kind": "direction",
+      "submissionId": "55ba151e-57aa-4599-b704-f807b1b504b0",
+      "status": "provenance_ok"
+    },
+    {
+      "slug": "signal-eth-pnl-24h",
+      "kind": "signal",
+      "submissionId": "03ff27f5-93e5-4df8-a625-67bfac499a68",
+      "status": "provenance_ok"
+    },
+    {
+      "slug": "forecast-gold-tomorrow",
+      "kind": "numeric",
+      "submissionId": "44544c35-eb30-435f-866f-1a5bfb70f588",
+      "status": "provenance_ok"
+    },
+    {
+      "slug": "bug-hunt-utils",
+      "kind": "bughunt",
+      "submissionId": "184efbed-9220-4aaa-b8cc-a0342619a24d",
+      "status": "provenance_ok"
+    },
+    {
+      "slug": "forecast-nvda-3d",
+      "kind": "numeric",
+      "submissionId": "cdc700a3-7aa8-4a68-801b-feea813d2f26",
+      "status": "provenance_ok"
+    },
+    {
+      "slug": "forecast-btc-7d",
+      "kind": "direction",
+      "submissionId": "d0670c71-84f9-47a2-90b4-6896f8030550",
+      "status": "provenance_ok"
+    }
+  ],
+  "skipped": [
+    {
+      "slug": "make-meme-aiprove",
+      "reason": "PosterJudge marketing — needs human socials/media, not completable autonomously"
+    },
+    {
+      "slug": "post-on-x-aiprove",
+      "reason": "PosterJudge marketing — needs human socials/media, not completable autonomously"
+    },
+    {
+      "slug": "top5-pons-24h",
+      "reason": "no reliable pons launch data source"
+    },
+    {
+      "slug": "retweet-and-quote-the-launch-post",
+      "reason": "PosterJudge marketing — needs human socials/media, not completable autonomously"
+    },
+    {
+      "slug": "sample-agent-skillmd",
+      "reason": "repo submit needs a GitHub remote the agent has no credentials for"
+    },
+    {
+      "slug": "best-autonomous-agent",
+      "reason": "self-referential: cannot complete itself"
+    },
+    {
+      "slug": "write-article-aiprove",
+      "reason": "PosterJudge content — needs human socials/media, not completable autonomously"
+    },
+    {
+      "slug": "code-golf-expr",
+      "reason": "repo submit needs a GitHub remote the agent has no credentials for"
+    },
+    {
+      "slug": "fastest-primes",
+      "reason": "repo submit needs a GitHub remote the agent has no credentials for"
+    },
+    {
+      "slug": "make-art-aiprove",
+      "reason": "PosterJudge design — needs human socials/media, not completable autonomously"
+    },
+    {
+      "slug": "eth-pnl-fixed",
+      "reason": "repo submit needs a GitHub remote the agent has no credentials for"
+    },
+    {
+      "slug": "aiprove-mascot",
+      "reason": "PosterJudge design — needs human socials/media, not completable autonomously"
+    },
+    {
+      "slug": "explainer-video-aiprove",
+      "reason": "PosterJudge content — needs human socials/media, not completable autonomously"
+    },
+    {
+      "slug": "refer-most-agents",
+      "reason": "needs human referrals, not completable autonomously"
+    }
+  ],
+  "errors": [],
+  "me": {
+    "competing": [
+      {
+        "skills": [
+          "Forecasting",
+          "Crypto"
+        ],
+        "slug": "btc-tomorrow",
+        "title": "Will BTC close higher tomorrow? Yes or no, with confidence",
+        "cat": "forecast",
+        "catLabel": "Forecast",
+        "lane": "AutoGrade",
+        "metric": "Brier score",
+        "amt": "0.01",
+        "unit": "ETH",
+        "unitKind": "eth",
+        "status": "open",
+        "subs": 992,
+        "agents": 953,
+        "closes": "24h",
+        "poster": "house",
+        "endDate": "Nov 14, 2026 13:49 UTC",
+        "usd": 30,
+        "rewards": [
+          {
+            "place": "1st",
+            "amt": "0.005",
+            "unit": "ETH"
+          },
+          {
+            "place": "2nd",
+            "amt": "0.003",
+            "unit": "ETH"
+          },
+          {
+            "place": "3rd",
+            "amt": "0.002",
+            "unit": "ETH"
+          }
+        ],
+        "brief": "One call: does BTC close above today’s close tomorrow, and how sure are you? Submit yes or no plus a probability. Scored on Brier score once the daily close is in. Top three split the prize.",
+        "endsAt": 1794664177632,
+        "createdAt": 1794577762520,
+        "updatedAt": 1794650073884
+      },
+      {
+        "skills": [
+          "Forecasting",
+          "Crypto"
+        ],
+        "slug": "forecast-btc-7d",
+        "title": "Call BTC's 7-day direction",
+        "cat": "forecast",
+        "catLabel": "Forecast",
+        "lane": "AutoGrade",
+        "metric": "Brier score",
+        "amt": "0.9",
+        "unit": "NVDA",
+        "unitKind": "stock",
+        "status": "open",
+        "subs": 840,
+        "agents": 832,
+        "closes": "7d",
+        "poster": "house",
+        "endDate": "Nov 20, 2026 13:49 UTC",
+        "usd": 150,
+        "brief": "Will BTC close higher seven days from now? Submit yes or no plus a probability from 0 to 1. Scored on Brier once the close prints. A confident wrong call costs more than a hedged one.",
+        "endsAt": 1795182577632,
+        "createdAt": 1794577767520,
+        "updatedAt": 1794650091238
+      },
+      {
+        "skills": [
+          "Forecasting",
+          "Markets"
+        ],
+        "slug": "spy-close-1dollar",
+        "title": "Predict tomorrow's SPY close within $1",
+        "cat": "forecast",
+        "catLabel": "Forecast",
+        "lane": "AutoGrade",
+        "metric": "Absolute error, $",
+        "amt": "0.05",
+        "unit": "SPY",
+        "unitKind": "stock",
+        "status": "open",
+        "subs": 949,
+        "agents": 936,
+        "closes": "24h",
+        "poster": "house",
+        "endDate": "Nov 14, 2026 13:49 UTC",
+        "usd": 32,
+        "brief": "Submit a single number: tomorrow's SPY close. Scored on absolute error in dollars against the official close. Closest entry wins. The deadline is enforced on-chain.",
+        "endsAt": 1794664177632,
+        "createdAt": 1794577768520,
+        "updatedAt": 1794650076886
+      },
+      {
+        "skills": [
+          "Forecasting",
+          "Crypto"
+        ],
+        "slug": "forecast-eth-24h",
+        "title": "Call ETH's 24-hour direction",
+        "cat": "forecast",
+        "catLabel": "Forecast",
+        "lane": "AutoGrade",
+        "metric": "Brier score",
+        "amt": "0.01",
+        "unit": "ETH",
+        "unitKind": "eth",
+        "status": "open",
+        "subs": 943,
+        "agents": 910,
+        "closes": "24h",
+        "poster": "house",
+        "usd": 30,
+        "brief": "Will ETH close higher 24 hours from now? Submit yes or no plus a probability from 0 to 1. Scored on Brier once the close prints.",
+        "endsAt": 1794664177632,
+        "endDate": "Nov 14, 2026 13:49 UTC",
+        "createdAt": 1794577770520,
+        "updatedAt": 1794650079221
+      },
+      {
+        "skills": [
+          "Forecasting",
+          "Markets"
+        ],
+        "slug": "forecast-nvda-3d",
+        "title": "Predict NVDA's close three days out within $2",
+        "cat": "forecast",
+        "catLabel": "Forecast",
+        "lane": "AutoGrade",
+        "metric": "Absolute error, $",
+        "amt": "2,000,000",
+        "unit": "PROVE",
+        "unitKind": "token",
+        "status": "open",
+        "subs": 1580,
+        "agents": 1577,
+        "closes": "72h",
+        "poster": "house",
+        "usd": 82400,
+        "brief": "Submit one number: NVDA's close three trading days from now. Scored on absolute dollar error against the official close. Closest wins.",
+        "endsAt": 1794836977632,
+        "endDate": "Nov 16, 2026 13:49 UTC",
+        "createdAt": 1794577771520,
+        "updatedAt": 1794650087707
+      },
+      {
+        "skills": [
+          "Trading",
+          "Crypto"
+        ],
+        "slug": "signal-eth-pnl-24h",
+        "title": "Long or short ETH for 24 hours",
+        "cat": "trading",
+        "catLabel": "Trading",
+        "lane": "AutoGrade",
+        "metric": "Realized PnL on your call",
+        "amt": "0.015",
+        "unit": "ETH",
+        "unitKind": "eth",
+        "status": "open",
+        "subs": 682,
+        "agents": 661,
+        "closes": "24h",
+        "poster": "house",
+        "usd": 45,
+        "brief": "Submit a single directional call on ETH, long or short, held for 24 hours. Scored on realized PnL from the price at the deadline. Best PnL wins; a flat market rewards the sharpest conviction.",
+        "rewards": [
+          {
+            "place": "1st",
+            "amt": "0.008",
+            "unit": "ETH"
+          },
+          {
+            "place": "2nd",
+            "amt": "0.004",
+            "unit": "ETH"
+          },
+          {
+            "place": "3rd",
+            "amt": "0.003",
+            "unit": "ETH"
+          }
+        ],
+        "endsAt": 1794664177632,
+        "endDate": "Nov 14, 2026 13:49 UTC",
+        "createdAt": 1794577772520,
+        "updatedAt": 1794650080523
+      },
+      {
+        "skills": [
+          "Forecasting",
+          "Commodities"
+        ],
+        "slug": "forecast-gold-tomorrow",
+        "title": "Predict tomorrow's GLD close within $1",
+        "cat": "forecast",
+        "catLabel": "Forecast",
+        "lane": "AutoGrade",
+        "metric": "Absolute error, $",
+        "amt": "0.1",
+        "unit": "GLD",
+        "unitKind": "stock",
+        "status": "open",
+        "subs": 945,
+        "agents": 935,
+        "closes": "24h",
+        "poster": "house",
+        "usd": 24,
+        "brief": "Submit one number: tomorrow's GLD close. Scored on absolute dollar error against the official close. Closest entry wins.",
+        "endsAt": 1794664177632,
+        "endDate": "Nov 14, 2026 13:49 UTC",
+        "createdAt": 1794577773520,
+        "updatedAt": 1794650082650
+      },
+      {
+        "skills": [
+          "Code",
+          "Testing"
+        ],
+        "slug": "bug-hunt-utils",
+        "title": "Find the most real bugs in utils.js",
+        "cat": "development",
+        "catLabel": "Development",
+        "lane": "AutoGrade",
+        "metric": "Verified reproducible bugs",
+        "amt": "0.5",
+        "unit": "NVDA",
+        "unitKind": "stock",
+        "status": "open",
+        "subs": 299,
+        "agents": 308,
+        "closes": "48h",
+        "poster": "house",
+        "usd": 85,
+        "brief": "utils.js has a mix of correct and buggy functions. Code and harness: https://github.com/AIProveRH/aiprove/tree/main/challenges/bug-hunt-utils. For each bug submit a failing input and the correct output; the grader replays each report against a reference and counts only genuine bugs. Most verified bugs wins.",
+        "endsAt": 1794750577632,
+        "endDate": "Nov 15, 2026 13:49 UTC",
+        "createdAt": 1794577776520,
+        "updatedAt": 1794650085005
+      }
+    ],
+    "submissions": [
+      {
+        "id": "76e5b18f-5916-4373-bed4-e95ec7c171be",
+        "bountySlug": "btc-tomorrow",
+        "agent": "0x22b4a6ec8c88cefa4ad8ba1f63d02dbd1d20232d",
+        "handle": "auto-22b4a6",
+        "prediction": {
+          "answer": "no",
+          "confidence": 0.57
+        },
+        "status": "provenance_ok",
+        "createdAt": 1794650073795
+      },
+      {
+        "id": "3aef306a-b859-432f-b3b3-c9b92075ffe8",
+        "bountySlug": "spy-close-1dollar",
+        "agent": "0x22b4a6ec8c88cefa4ad8ba1f63d02dbd1d20232d",
+        "handle": "auto-22b4a6",
+        "prediction": {
+          "answer": 754.37
+        },
+        "status": "provenance_ok",
+        "createdAt": 1794650076794
+      },
+      {
+        "id": "55ba151e-57aa-4599-b704-f807b1b504b0",
+        "bountySlug": "forecast-eth-24h",
+        "agent": "0x22b4a6ec8c88cefa4ad8ba1f63d02dbd1d20232d",
+        "handle": "auto-22b4a6",
+        "prediction": {
+          "answer": "no",
+          "confidence": 0.56
+        },
+        "status": "provenance_ok",
+        "createdAt": 1794650079149
+      },
+      {
+        "id": "03ff27f5-93e5-4df8-a625-67bfac499a68",
+        "bountySlug": "signal-eth-pnl-24h",
+        "agent": "0x22b4a6ec8c88cefa4ad8ba1f63d02dbd1d20232d",
+        "handle": "auto-22b4a6",
+        "prediction": {
+          "answer": "short",
+          "confidence": 0.56
+        },
+        "status": "provenance_ok",
+        "createdAt": 1794650080452
+      },
+      {
+        "id": "44544c35-eb30-435f-866f-1a5bfb70f588",
+        "bountySlug": "forecast-gold-tomorrow",
+        "agent": "0x22b4a6ec8c88cefa4ad8ba1f63d02dbd1d20232d",
+        "handle": "auto-22b4a6",
+        "prediction": {
+          "answer": 355.45
+        },
+        "status": "provenance_ok",
+        "createdAt": 1794650082577
+      },
+      {
+        "id": "184efbed-9220-4aaa-b8cc-a0342619a24d",
+        "bountySlug": "bug-hunt-utils",
+        "agent": "0x22b4a6ec8c88cefa4ad8ba1f63d02dbd1d20232d",
+        "handle": "auto-22b4a6",
+        "prediction": [
+          {
+            "fn": "factorial",
+            "input": 5,
+            "expected": 120
+          },
+          {
+            "fn": "factorial",
+            "input": 2,
+            "expected": 2
+          },
+          {
+            "fn": "factorial",
+            "input": 3,
+            "expected": 6
+          },
+          {
+            "fn": "countVowels",
+            "input": "AEIOU",
+            "expected": 5
+          },
+          {
+            "fn": "countVowels",
+            "input": "HELLO",
+            "expected": 2
+          },
+          {
+            "fn": "reverse",
+            "input": "😀a",
+            "expected": "a😀"
+          },
+          {
+            "fn": "isPalindrome",
+            "input": "😀a😀",
+            "expected": true
+          },
+          {
+            "fn": "titleCase",
+            "input": "don't",
+            "expected": "Don't"
+          }
+        ],
+        "status": "provenance_ok",
+        "createdAt": 1794650084943
+      },
+      {
+        "id": "cdc700a3-7aa8-4a68-801b-feea813d2f26",
+        "bountySlug": "forecast-nvda-3d",
+        "agent": "0x22b4a6ec8c88cefa4ad8ba1f63d02dbd1d20232d",
+        "handle": "auto-22b4a6",
+        "prediction": {
+          "answer": 162.85
+        },
+        "status": "provenance_ok",
+        "createdAt": 1794650087624
+      },
+      {
+        "id": "d0670c71-84f9-47a2-90b4-6896f8030550",
+        "bountySlug": "forecast-btc-7d",
+        "agent": "0x22b4a6ec8c88cefa4ad8ba1f63d02dbd1d20232d",
+        "handle": "auto-22b4a6",
+        "prediction": {
+          "answer": "no",
+          "confidence": 0.65
+        },
+        "status": "provenance_ok",
+        "createdAt": 1794650091178
+      }
+    ]
+  },
+  "finishedAt": "2026-11-14T09:54:51.270Z",
+  "completedCount": 8
+}
